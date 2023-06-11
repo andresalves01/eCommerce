@@ -1,0 +1,200 @@
+body {
+    color: #fff;
+}
+
+/* Header Config*/
+.navbar,
+.navbar-brand {
+    background-color: darkblue !important;
+    color: white;
+}
+
+.navbar-toggler-icon-white {
+    background-color: #fff;
+}
+
+#cellphone-only,
+.header-newsletter,
+#quick-find-header,
+.recomendados-mobile,
+.box {
+    display: none;
+}
+
+/* Carrinho */
+#navbarSupportedContent #barrinha {
+    display: none;
+}
+
+#barrinha img{
+    width: 100%;
+    height: 40px;
+    object-fit: cover;
+    filter: brightness(0) invert(1);
+}
+
+#cart h1 {
+    display: none;
+    overflow: hidden;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 100 !important;
+}
+
+#menuToggle:checked~label i:nth-child(2),
+#menuToggle:not(:checked)~label i:first-child {
+    display: block;
+    z-index: 999 !important;
+}
+
+#menuToggle:checked~label i:first-child,
+#menuToggle:not(:checked)~label i:nth-child(2) {
+    display: none;
+}
+
+#menuToggle:checked~h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    bottom: 100%;
+    left: 0px;
+    right: 0px;
+    z-index: 0;
+}
+
+#cart i {
+    font-size: 2em;
+    z-index: 999 !important;
+}
+
+/* Busca Rápida */
+#quick-find {
+    display: flex;
+    flex-direction: column;
+    border: #fff solid 1px;
+    padding: 1%;
+    justify-content: center;
+}
+
+form>div {
+    border: #fff solid 1px;
+}
+
+/* Carousel */
+.carousel,
+.slide,
+img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+footer img {
+    padding: 10px;
+    height: 150px;
+    object-fit: contain;
+}
+
+footer {
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.719);
+}
+
+.PlayStation h5,
+.PlayStation p {
+    font-size: 250%;
+    color: white;
+    font-weight: bolder;
+    text-shadow: -2px 0 blue, 0 2px blue, 2px 0 blue, 0 -2px blue;
+}
+
+.Xbox h5,
+.Xbox p {
+    font-size: 250%;
+    color: white;
+    font-weight: bolder;
+    text-shadow: -2px 0 green, 0 2px green, 2px 0 green, 0 -2px green;
+}
+
+.Nintendo h5,
+.Nintendo p {
+    font-size: 250%;
+    color: white;
+    font-weight: bolder;
+    text-shadow: -3px 0 red, 0 3px red, 3px 0 red, 0 -3px red;
+}
+
+/* Produtos */
+.rating-color {
+    color: yellow !important;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: scale-down;
+    background-color: #fff;
+}
+
+:any-link {
+    text-decoration: none;
+    text-decoration: underline;
+    color: white;
+}
+
+/* Newsletter */
+
+.produtos-recomendados {
+    border: 2px solid #ffffff31;
+    border-radius: 10px;
+}
+
+.newsletter {
+    border: 2px solid #ffffff31;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:992px) {
+    #cellphone-only {
+        display: block;
+    }
+
+    #pc-only,
+    #menu-cart {
+        display: none;
+    }
+
+    #cellphone-only div div div {
+        padding: 10px 5px;
+    }
+
+
+    #quick-find,
+    .newsletter,
+    .produtos-recomendados {
+        display: none;
+    }
+
+    .carousel,
+    .slide,
+    img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .header-newsletter,
+    #quick-find-header,
+    .recomendados-mobile {
+        display: block;
+    }
+
+    #navbarSupportedContent #barrinha {
+        display: block;
+    }
+}
